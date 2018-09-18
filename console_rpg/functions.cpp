@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include <curses.h>
+#include <string>
 
 void printTitle(int y, int x) {
 	mvprintw(y, x,		" ________   _______   ___       __   _________  ________  ________           ________  ________  ________");
@@ -19,4 +20,10 @@ void printCharacter(int y, int x) {
 	mvprintw(y + 4, x,	"      / __| _ \\ __| /_\\_   _|_ _/ _ \\| \\| |  ");
 	mvprintw(y + 5, x,	"     | (__|   / _| / _ \\| |  | | (_) | .` | ");
 	mvprintw(y + 6, x,	"      \\___|_|_\\___/_/ \\_\\_| |___\\___/|_|\\_|  ");
-}                                             
+}                                         
+
+void printChar(WINDOW * window, int availablePoints, std::string stringConverter, const char * charArray, int y, int x ) {
+	stringConverter = std::to_string(availablePoints);
+	charArray = stringConverter.c_str();
+	mvwprintw(window, y, x, charArray);
+}

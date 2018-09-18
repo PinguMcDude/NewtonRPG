@@ -3,5 +3,6 @@
 #define CONSTANTS
 
 constexpr double defaultHealth = 100;
+constexpr int defaultRequiredXP = 100;
 
 #endif

@@ -5,13 +5,12 @@
 
 class Player {
 
-double health;
-int level;
-int currentxp;
-int requiredxp;
-
 public:
 	std::string name;
+	int level;
+	int currentxp;
+	int requiredxp;
+	double health;
 };
 
 #endif
