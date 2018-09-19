@@ -11,6 +11,9 @@ public:
 	int currentxp;
 	int requiredxp;
 	double health;
+	int strength;
+	int intelligence;
+	int dexterity;
 };
 
 #endif

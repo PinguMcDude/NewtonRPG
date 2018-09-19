@@ -17,7 +17,9 @@ enum class NPCTypes {
 enum class Options {
 	FIRST_OPTION = 0,
 	SECOND_OPTION = 1,
-	THIRD_OPTION = 2
+	THIRD_OPTION = 2,
+	FOURTH_OPTION = 3,
+	FIFTH_OPTION = 4
 };
 
 #endif
