@@ -19,7 +19,8 @@ enum class Options {
 	SECOND_OPTION = 1,
 	THIRD_OPTION = 2,
 	FOURTH_OPTION = 3,
-	FIFTH_OPTION = 4
+	FIFTH_OPTION = 4,
+	SIXTH_OPTION = 5
 };
 
 #endif
